@@ -21,7 +21,8 @@ export default defineConfig({
 
         proxy: {
             "/research": {
-                target: "http://localhost:8000",
+                // target: "http://localhost:8000",
+                target: "https://web-crawler-dqu4.onrender.com/",
                 changeOrigin: true,
             },
         },
