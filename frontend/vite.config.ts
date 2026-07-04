@@ -22,7 +22,7 @@ export default defineConfig({
         proxy: {
             "/research": {
                 // target: "http://localhost:8000",
-                target: "https://web-crawler-dqu4.onrender.com/",
+                target: "https://web-crawler-backend-bpv4.onrender.com/",
                 changeOrigin: true,
             },
         },
