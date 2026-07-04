@@ -25,3 +25,7 @@ async def root():
         "message": "AI Company Research Assistant API",
         "status": "running",
     }
+
+@app.get("/health")
+async def health():
+    return {"status": "healthy"}
