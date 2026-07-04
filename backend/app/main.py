@@ -2,7 +2,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.research import router as research_router
+from app.config import settings
 
+print("SERPER KEY EXISTS:", bool(settings.SERPER_API_KEY))
+print("SERPER KEY LENGTH:", len(settings.SERPER_API_KEY))
 app = FastAPI(
     title="AI Company Research Assistant",
     version="1.0.0",
